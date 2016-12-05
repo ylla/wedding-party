@@ -5,7 +5,6 @@
   width: 100%;
   height: 800px;
   height: 85vh;
-  background-color: darkgray;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -17,3 +16,81 @@
 body {
   margin: 0;
 }
+
+.wedding-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.slides-content {
+  margin: auto;
+  max-width: 800px;
+  display:block;
+  position: relative;
+}
+.button-large {
+  background-color: transparent;
+  cursor: pointer;
+  height: 800px;
+  width: 50%;
+}
+
+.arrow-white {
+    color: #fff;
+}
+
+.display-bottommiddle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    text-align: center;
+}
+
+.arrow-left {
+  cursor: pointer;
+  float: left;
+  padding-left: 16px;
+}
+
+.arrow-right {
+  cursor: pointer;
+  float: right;
+  padding-right: 16px;
+}
+
+.peas-border {
+  border: 1px solid #ccc;
+}
+
+.slider-badge {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  border-radius: 50%;
+  color: #000;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-family: Verdana,sans-serif;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.peas-white {
+  background-color: #fff;
+}
+
+.peas-hover-white:hover {
+  background-color: #fff!important;
+}
+

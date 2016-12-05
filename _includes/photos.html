@@ -1,3 +1,44 @@
-<div class="section" style="background-image: url(/images/sugar.jpg)">
-	<p>Here goes a photo slider</p>
+
+<div class="slides-content">
+	<img class="wedding-slides" src="/images/borneo-bird.jpg" style="width:100%">
+	<img class="wedding-slides" src="/images/borneo-green.jpg" style="width:100%">
+	<img class="wedding-slides" src="/images/bagan-light.jpg" style="width:100%">
+	<img class="wedding-slides" src="/images/bagan-dark.jpg" style="width:100%">
+	<div class="arrow-white display-bottommiddle" style="width:100%">
+    <div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
+    <span class="slider-badge peas peas-border transparent peas-hover-white" onclick="currentDiv(1)"></span>
+    <span class="slider-badge peas peas-border transparent peas-hover-white" onclick="currentDiv(2)"></span>
+    <span class="slider-badge peas peas-border transparent peas-hover-white" onclick="currentDiv(3)"></span>
+    <span class="slider-badge peas peas-border transparent peas-hover-white" onclick="currentDiv(4)"></span>
+    </div>
 </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("wedding-slides");
+  var dots = document.getElementsByClassName("peas");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" peas-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " peas-white";
+}
+</script>

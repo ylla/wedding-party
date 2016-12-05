@@ -1,1 +1,21 @@
 2do.txt
+
+Mobile first
+Images extend to fill the whole page
+Images are of reasonable height
+Images scales to center a relevant section of the image on mobile
+
+Buttons are large
+Can swipe on mobile
+There are photos for 
+>> Story
+>> FAQ
+
+Start
+Story 1
+Story 2
+Story 3 and 4
+Photos
+FAQ
+Venue
+RSVP
