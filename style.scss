@@ -6,6 +6,7 @@ $wedding-brown: #3B2613;
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  font-size: large;
   line-height: 1.5em;
   color: $wedding-brown;
 }
@@ -85,6 +86,13 @@ body {
   align-self: stretch;
   height: 100%;
   background-size: cover;
+  &.dark {
+    color: white;
+  }
+  &.photo {
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+  }
 }
 
 .slide-control {
