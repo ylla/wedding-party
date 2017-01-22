@@ -16,6 +16,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: 0.15em;
   margin-bottom: 0.4em;
+  line-height: 1.2em;
 }
 
 p {
@@ -33,9 +34,10 @@ $ampersand-height: 2.2em;
     height: 10em;
   }
   p {
+    text-align: center;
     font-size: 1.2em;
     font-weight: 300;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     margin-bottom: 0;
     &.larger {
       font-size: 2em;
@@ -46,7 +48,8 @@ $ampersand-height: 2.2em;
     }
   }
   h1 {
-    margin-bottom: ($ampersand-height - 1)/2;
+    text-align: center;
+    line-height: ($ampersand-height - 1)/2+1;
     svg {
       height: $ampersand-height;
       margin: 0 -0.3em (-($ampersand-height - 1)/2) -0.1em;
@@ -55,7 +58,6 @@ $ampersand-height: 2.2em;
 }
 
 .section {
-  width: 100%;
   min-height: 800px;
   min-height: 90vh;
   background-position: center;
@@ -76,7 +78,6 @@ body {
   justify-content: center;
   flex-direction: column; 
   padding: 2rem;
-  width: 100%;
   height: 100%;
   background-size: cover;
 }
