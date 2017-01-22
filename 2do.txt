@@ -3,7 +3,8 @@
 22 Jan
 ------
 Story1, Story2, about-g and about-y have one page with text and then photos. The slider doesn't work, but everything else seems to be according to mock-up. Story2 and about-y temporarily changed to purple color to make it easier to tell them apart.
-
+X RSVP link to form
+X Link to Restaurang Kräftan
 
 12 Jan
 ------
