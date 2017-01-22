@@ -1,0 +1,47 @@
+<div class="section" style="background-color: #66CCCC">
+  <div>
+    <h1>Who is Gabriel?</h1>
+    <p>Gabriel is the elder son of Fredrik and Annika Lundberg. Reared and schooled on the west coast of Sweden, he moved to Singapore by way of Stockholm. Driven by his love for curiosity, complexity and and the need to tease apart what makes systems tick, he currently makes his living at a venture capital firm.</p>
+  </div>
+  <div class="slides-content">
+  <img class="about-g-slides" src="/images/about-g.jpg" style="width:100%">
+
+
+  <div class="arrow-white display-bottommiddle" style="width:100%">
+    <div class="arrow-left"   onclick="plusDivs(-1)">&#10094;</div>
+    <div class="arrow-right"  onclick="plusDivs(1)">&#10095;</div>
+      <span class="slider-badge about-g-peas peas peas-border transparent peas-hover-white" 
+          onclick="currentDiv(1)"></span>
+  </div>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("about-g-slides");
+  var dots = document.getElementsByClassName("about-g-peas");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" peas-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " peas-white";
+}
+</script>
+</div>

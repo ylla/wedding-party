@@ -1,0 +1,48 @@
+<div class="section" style="background-color: #66CCCC">
+	<div>
+		<h1>Who is Ylla?</h1>
+		<p>Ylla is the youngest daughter of Christina Norrby and Ragnar von Malmborg. She is a 2015 graduate from Linneaus University, Sweden and works as a Project Manager in Singapore. She follows the motto <i>Knowledge, Experience, Adventure</i> and her dream is to one day own a horse. Yllas life wouldn't be complete without her loyal whale, APV. </p>
+	</div>
+	<div class="slides-content">
+	<img class="about-y-slides" src="/images/about-y.jpg" style="width:100%">
+
+
+	<div class="arrow-white display-bottommiddle" style="width:100%">
+	<div class="arrow-left"   onclick="plusDivs(-1)">&#10094;</div>
+	<div class="arrow-right"  onclick="plusDivs(1)">&#10095;</div>
+		<span class="slider-badge about-y-peas peas peas-border transparent peas-hover-white" 
+		  onclick="currentDiv(1)"></span>
+ 
+	</div>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("about-y-slides");
+  var dots = document.getElementsByClassName("about-y-peas");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+	 x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+	 dots[i].className = dots[i].className.replace(" peas-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " peas-white";
+}
+</script>
+</div>
