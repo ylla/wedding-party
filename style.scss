@@ -18,6 +18,7 @@ h1, h2, h3, h4 {
   letter-spacing: 0.15em;
   margin-bottom: 0.4em;
   line-height: 1.2em;
+  text-align: center;
 }
 
 p {
@@ -40,7 +41,8 @@ $ampersand-height: 2.2em;
     margin-top: 1.2rem;
     margin-bottom: 0;
     &.larger {
-      font-size: 2em;
+      font-size: 2rem;
+      line-height: 1.1em;
     }
     em {
       font-weight: 400;
@@ -60,12 +62,15 @@ $ampersand-height: 2.2em;
 .section {
   min-height: 800px;
   min-height: 90vh;
-  background-color: #66CCCC;
+
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-direction: column; 
+  
   position: relative;
+
+  background-size: cover;
 }
 
 body {
@@ -92,7 +97,16 @@ body {
   &.photo {
     justify-content: flex-end;
     padding-bottom: 3rem;
+    text-align: center;
+    background-color: transparent;
   }
+  &.text {
+    background-color: rgba(151,219,204,0.9);
+  }
+}
+
+.section:nth-of-type(2n) .slide.text {
+  background-color: rgba(188,245,234,0.9);
 }
 
 .slide-control {
