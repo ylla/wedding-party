@@ -1,60 +1,23 @@
-<div class="section" style="background-color: #6666CC">
-	<div class="slides-content">
-		
-		<div class="story2-slides wedding-slides">
-			<h1>Engagement</h1>
-			<p>Near Arab street in Singapore there's a bar with a theme. Constructed in the early 2000's by an aging property businessman as a price-is-no-object statement, the décor is strictly art deco and the fairy servers get your wine bottles by flying.</p>
-			<p>We'd been many times, and I didn't suspect a thing when it came up as a good spot for a nightcap to finish our evening out and about. And so it came to pass that I was proposed to in a place both ephemeral yet timeless, and both fantastic and formidable.</p>
-		</div>
-
-		<div class="story2-slides wedding-slides" 
-				 style="background-image: url(/images/story2a.jpg); background-position: 50% 40%"></div>
-		<div class="story2-slides" class="wedding-slides" 
-		     style="background-image: url(/images/story2b.jpg); background-position: 50% 25%"></div>
-		<div class="story2-slides" class="wedding-slides" 
-		     style="background-image: url(/images/story2c.jpg); background-position: 40% 50%"></div>	
-
-		<div class="arrow-white display-bottommiddle" style="width:100%">
-	    <div class="arrow-left"   onclick="plusDivs(-1)">&#10094;</div>
-	    <div class="arrow-right"  onclick="plusDivs(1)">&#10095;</div>
-		    <span class="slider-badge story2-peas peas peas-border transparent peas-hover-white" 
-		          onclick="currentDiv(1)"></span>
-		    <span class="slider-badge story2-peas peas peas-border transparent peas-hover-white" 
-		          onclick="currentDiv(2)"></span>
-		    <span class="slider-badge story2-peas peas peas-border transparent peas-hover-white" 
-	          onclick="currentDiv(3)"></span>
-	  </div>
-
+<div class="section">
+  <div class="slide active">
+	<h1>Engagement</h1>
+	<p>Near Arab street in Singapore there's a bar with a theme. Constructed in the early 2000's by an aging property businessman as a price-is-no-object statement, the décor is strictly art deco and the fairy servers get your wine bottles by flying.</p>
+	<p>We'd been many times, and I didn't suspect a thing when it came up as a good spot for a nightcap to finish our evening out and about. And so it came to pass that I was proposed to in a place both ephemeral yet timeless, and both fantastic and formidable.</p>
 	</div>
+
+	<div class="slide dark"
+			 style="background-image: url(/images/story2a.jpg); background-position: 50% 40%"></div>
+	<div class="slide dark" 
+	     style="background-image: url(/images/story2b.jpg); background-position: 50% 25%"></div>
+	<div class="slide dark"  
+	     style="background-image: url(/images/story2c.jpg); background-position: 40% 50%"></div>	
+
+ <div class="slide-control">
+    <div class="arrow-left" onclick="plusDivs(this, -1)">&lt;</div>
+    <div class="dot active" onclick="currentDiv(this, 1)"></div>
+    <div class="dot" onclick="currentDiv(this, 2)"></div>
+    <div class="dot" onclick="currentDiv(this, 3)"></div>
+    <div class="dot" onclick="currentDiv(this, 4)"></div>
+    <div class="arrow-right"  onclick="plusDivs(this, 1)">&gt;</div>
+  </div>
 </div>
-
-
-<script>
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("story2-slides");
-  var dots = document.getElementsByClassName("story2-peas");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" peas-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " peas-white";
-}
-</script>
