@@ -1,16 +1,30 @@
 ---
 ---
 
+$wedding-brown: #3B2613;
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: $wedding-brown;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.section.start {
+  color: white;
 }
 
 .section {
