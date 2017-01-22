@@ -35,7 +35,6 @@ $ampersand-height: 2.2em;
   }
   p {
     text-align: center;
-    font-size: 1.2em;
     font-weight: 300;
     margin-top: 1.2rem;
     margin-bottom: 0;
@@ -60,92 +59,61 @@ $ampersand-height: 2.2em;
 .section {
   min-height: 800px;
   min-height: 90vh;
-  background-position: center;
-  background-size: cover;
+  background-color: #66CCCC;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column; 
+  position: relative;
 }
 
 body {
   margin: 0;
 }
 
-.wedding-slides {
-  display: flex;
+.slide {
+  z-index: 0;
+  display: none;
+  &.active {
+    display: flex;
+  }
   align-items: center;
   justify-content: center;
-  flex-direction: column; 
+  flex-direction: column;
+  flex: 1 1 0;
   padding: 2rem;
+  align-self: stretch;
   height: 100%;
   background-size: cover;
 }
 
-.slides-content {
-  margin: auto;
-  max-width: 800px;
-  display:block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.arrow-white {
-    color: #fff;
-}
-
-.display-bottommiddle {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    text-align: center;
+.slide-control {
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - 2rem);
+  bottom: 0;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  &.dark {
+    color: white;
+  }
 }
 
 .arrow-left {
-  cursor: pointer;
-  float: left;
-  padding-left: 16px;
+  text-align: left;
+  flex: 1 1 0;
 }
-
 .arrow-right {
-  cursor: pointer;
-  float: right;
-  padding-right: 16px;
+  text-align: right;
+  flex: 1 1 0;
 }
-
-.peas-border {
-  border: 1px solid #ccc;
+.dot.active::before {
+  content: "\25CF";
 }
-
-.slider-badge {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  padding: 0;
-  border-radius: 50%;
-  color: #000;
-  background-color: #fff;
-  display: inline-block;
-  text-align: center;
-  font-size: 18px;
-  font-family: Verdana,sans-serif;
-}
-
-.transparent {
-    background-color: transparent;
-}
-
-.peas-white {
-  background-color: #fff;
-}
-
-.peas-hover-white:hover {
-  background-color: #fff!important;
+.dot:before {
+  content: "\25CB";
 }
 
 .rsvp-box {
