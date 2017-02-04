@@ -2,6 +2,9 @@
 ---
 
 $wedding-brown: #3B2613;
+$wedding-brown-light: #A6540D;
+$wedding-blue: #97DBCC;
+$wedding-blue-light: #BCF5EA;
 
 body {
   font-family: 'Lato', sans-serif;
@@ -101,12 +104,12 @@ body {
     background-color: transparent;
   }
   &.text {
-    background-color: rgba(151,219,204,0.9);
+    background-color: rgba($wedding-blue,0.9);
   }
 }
 
 .section:nth-of-type(2n) .slide.text {
-  background-color: rgba(188,245,234,0.9);
+  background-color: rgba($wedding-blue-light,0.9);
 }
 
 .slide-control {
@@ -136,6 +139,11 @@ body {
 }
 .dot:before {
   content: "\25CB";
+}
+
+.venue-map {
+  height: 800px;
+  height: 70vh;
 }
 
 .rsvp-box {
