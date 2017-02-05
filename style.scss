@@ -6,12 +6,19 @@ $wedding-brown-light: #A6540D;
 $wedding-blue: #97DBCC;
 $wedding-blue-light: #BCF5EA;
 
+* {
+  flex-shrink: 0;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: large;
   line-height: 1.5em;
+
   color: $wedding-brown;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4 {
@@ -40,40 +47,10 @@ a, a:hover, a:link, a:visited, a:active {
 
 $ampersand-height: 2.2em;
 
-.section.start {
-  color: white;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  svg {
-    height: 10em;
-  }
-  p {
-    text-align: center;
-    font-weight: 300;
-    margin-top: 1.2rem;
-    margin-bottom: 0;
-    &.larger {
-      font-size: 2rem;
-      line-height: 1.1em;
-    }
-    em {
-      font-weight: 400;
-      font-style: normal;
-    }
-  }
-  h1 {
-    text-align: center;
-    line-height: ($ampersand-height - 1)/2+1;
-    svg {
-      height: $ampersand-height;
-      margin: 0 -0.3em (-($ampersand-height - 1)/2) -0.1em;
-    }
-  }
-}
-
 .section {
-  min-height: 800px;
-  min-height: 90vh;
+  min-height: 600px;
+  min-height: 85vh;
+  flex: 1 0 auto;
 
   display: flex;
   align-items: stretch;
@@ -89,6 +66,20 @@ body {
   margin: 0;
 }
 
+.section:nth-of-type(3n) {
+  .slide {
+    background-color: rgba($wedding-blue-light,0.9);
+  }
+}
+
+.section:nth-of-type(3n+1) {
+  color: white;
+  .slide {
+    background-color: rgba($wedding-brown,0.9);
+  }
+}
+
+
 .slide {
   z-index: 0;
   display: none;
@@ -98,13 +89,43 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex: 1 1 0;
+  flex: 1 0 auto;
   padding: 2rem;
   align-self: stretch;
-  height: 100%;
   background-size: cover;
-  &.dark {
+
+  background-color: rgba($wedding-blue,0.9);
+
+  &.start {
     color: white;
+    background-color: transparent;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    svg {
+      height: 10rem;
+    }
+    p {
+      text-align: center;
+      font-weight: 300;
+      margin-top: 1.2rem;
+      margin-bottom: 0;
+      &.larger {
+        font-size: 2rem;
+        line-height: 1.1em;
+      }
+      em {
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+    h1 {
+      text-align: center;
+      line-height: ($ampersand-height - 1)/2+1;
+      svg {
+        height: $ampersand-height;
+        margin: 0 -0.3em (-($ampersand-height - 1)/2) -0.1em;
+      }
+    }
   }
   &.photo {
     justify-content: flex-end;
@@ -112,13 +133,9 @@ body {
     text-align: center;
     background-color: transparent;
   }
-  &.text {
-    background-color: rgba($wedding-blue,0.9);
+  &.dark {
+    color: white;
   }
-}
-
-.section:nth-of-type(2n) .slide.text {
-  background-color: rgba($wedding-blue-light,0.9);
 }
 
 .slide-control {
@@ -130,6 +147,7 @@ body {
   display: flex;
   flex-direction: row;
   font-size: 2rem;
+  color: inherit;
   &.dark {
     color: white;
   }
@@ -150,14 +168,40 @@ body {
   content: "\25CB";
 }
 
+.button {
+  display: flex;
+  border: 0.4rem solid $wedding-brown;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.venue {
+  display: flex;
+  flex-flow: row nowrap;
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  a {
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+}
+
 .venue-map {
-  height: 800px;
-  height: 70vh;
+  margin: 0 -2rem;
+  flex: 1 0 600px;
+  flex: 1 0 70vh;
+  align-self: stretch;
 }
 
 .rsvp-box {
     background-color: #66CCCC;
-    border: 5px solid $wedding-brown;
     padding: 40px;
-    text-align: center;
 }

@@ -1,56 +1,62 @@
 <div class="section">
+	<div class="slide active">
 
-	<h1>THE EVENT</h1>
-	<p>19 August 2017</p>
-	<p>Restaurang Kräftan</p>
-	<p>Kräftriket</p> 
-	<p>Stockholm, Sweden</p>
-	<div class='venue-map' id='map'></div>
-	<script>
-	  function initMap() {
-	    var coord = {lat: 59.3587397, lng: 18.0550108};
-	    var map = new google.maps.Map(document.getElementById('map'), {
-	      center: coord,
-	      zoom: 15,
-	      zoomControl: undefined, // show if map is above 200px
-	      mapTypeControl: false,
-	      scaleControl: false,
-	      streetViewControl: false,
-	      rotateControl: false,
-	      fullscreenControl: false,
-	      scrollwheel: false,
-	      styles: [
-	        {
-	          "stylers": [
-	            { "hue": "#BCF5EA" },
-	            { "saturation": -40 },
-	            { "gamma": 0.8 }
-	          ]
-	        },{
-	          "featureType": "poi",
-	          "stylers": [
-	            { "visibility": "off" }
-	          ]
-	        }
-	      ]
-	    });
-	    var marker = new google.maps.Marker({
-	      position: coord,
-	      map: map,
-	      title: 'Restaurang Kräftan',
-	      // Below as per http://stackoverflow.com/a/7686977
-	      icon: new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|A6540D",
-	        new google.maps.Size(21, 34),
-	        new google.maps.Point(0,0),
-	        new google.maps.Point(10, 34))
-	    });
-	  }
-	</script>
-	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBWLZmlGL0wEPMYUr1SDE57wBkpThKoT-o&callback=initMap'
-	async defer></script>
+		<h1>The event</h1>
 
-	<a href="https://www.google.com.sg/maps/place/V%C3%A4rdshuset+Kr%C3%A4ftan/@59.3584314,18.0535573,17z/data=!3m1!4b1!4m5!3m4!1s0x465f9d0e64b52cb9:0x5aa52cfd7ced69cc!8m2!3d59.3584287!4d18.0557513?hl">Location on Google Maps</a>
+		<div class="venue">
+			<div class="address">
+				<p>19 August 2017</p>
+				<p>Restaurang Kräftan<br />
+				Kräftriket<br /> 
+				Stockholm, Sweden</p>
+			</div>
+			<a href="https://www.google.com.sg/maps/dir//Kraftan,+Roslagsv%C3%A4gen+101,+Hus+9,+114+19+Stockholm,+Sweden/@59.3584287,18.0557513,15z/data=!4m15!1m6!3m5!1s0x0:0x5aa52cfd7ced69cc!2sKraftan!8m2!3d59.3584287!4d18.0557513!4m7!1m0!1m5!1m1!1s0x465f9d0e64b52cb9:0x5aa52cfd7ced69cc!2m2!1d18.0557513!2d59.3584287" class="button"><div>Directions</div></a>
+		</div>
+		<div class='venue-map' id='map'></div>
+		<script>
+		  function initMap() {
+		    var coord = {lat: 59.3587397, lng: 18.0550108};
+		    var map = new google.maps.Map(document.getElementById('map'), {
+		      center: coord,
+		      zoom: 15,
+		      zoomControl: true, // show if map is above 200px
+		      mapTypeControl: false,
+		      scaleControl: false,
+		      streetViewControl: false,
+		      rotateControl: false,
+		      fullscreenControl: false,
+		      scrollwheel: false,
+		      styles: [
+		        {
+		          "stylers": [
+		            { "hue": "#BCF5EA" },
+		            { "saturation": -40 },
+		            { "gamma": 0.8 }
+		          ]
+		        },{
+		          "featureType": "poi",
+		          "stylers": [
+		            { "visibility": "off" }
+		          ]
+		        }
+		      ]
+		    });
+		    var marker = new google.maps.Marker({
+		      position: coord,
+		      map: map,
+		      title: 'Restaurang Kräftan',
+		      // Below as per http://stackoverflow.com/a/7686977
+		      icon: new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|A6540D",
+		        new google.maps.Size(21, 34),
+		        new google.maps.Point(0,0),
+		        new google.maps.Point(10, 34))
+		    });
+		  }
+		</script>
+		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBWLZmlGL0wEPMYUr1SDE57wBkpThKoT-o&callback=initMap'
+		async defer></script>
 
-	<p>Psst! Did you know?</p>
-	<p>The restaurant is named after yllas favorite food!</p>
+		<p>Psst! Did you know?<br/>
+		The restaurant is named after yllas favorite food!</p>
+	</div>
 </div>
