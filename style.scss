@@ -26,7 +26,16 @@ h1, h2, h3, h4 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+
+p, h1, h2, h3, h4 {
+  max-width: 30rem;
+}
+
+a, a:hover, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 $ampersand-height: 2.2em;
