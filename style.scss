@@ -170,9 +170,11 @@ body {
 
 .button {
   display: flex;
+  flex-direction: column;
   border: 0.4rem solid $wedding-brown;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -202,6 +204,6 @@ body {
 }
 
 .rsvp-box {
-    background-color: #66CCCC;
-    padding: 40px;
+  padding: 2rem;
+  margin: 1rem;
 }
