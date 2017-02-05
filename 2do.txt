@@ -1,5 +1,10 @@
 2do.txt
 
+5 Feb
+-----
+X Icke läskiga bilder på yllz
+First photo too dark and gloomy?
+
 25 Jan
 ------
 X Hand cursor missing on pagination Y
@@ -20,9 +25,9 @@ X Link to Restaurang Kräftan
 12 Jan
 ------
 X Story2, about-g and about-y is b0rk
-Story1 WIP: 
-	* We want multiple slideIndex, one for each page
-	* Store the slideIndex for a particular slider ("story1-slides-content") somewhere where we can find it using only the slideId
+X Story1 WIP: 
+X	* We want multiple slideIndex, one for each page
+X	* Store the slideIndex for a particular slider ("story1-slides-content") somewhere 	where we can find it using only the slideId
 
 
 
@@ -42,9 +47,9 @@ Select photos for
 	Minimum left to select: 4
 	(Order of documents:)
 *	Start 1
->	Story 1 - Austria, Santeris-bild, Nåt från Honduras?
+>	X Story 1 - Austria, Santeris-bild, Nåt från Honduras?
 >	X Story 2 - Bröllop: Huset, hångel, porträtt
->	Story 3 and 4 - Ylla, Gabriel
+>	X Story 3 and 4 - Ylla, Gabriel
 >	Photos x infinity
 *	X FAQ - 0
 *	Venue - 1 På lokal
@@ -59,7 +64,7 @@ Styling
 -------
 X Images extend to fill the whole page
 X Images are of reasonable height
-Images scales to center a relevant section of the image on mobile
-Logotype
-Fonts
-Colors
+X Images scales to center a relevant section of the image on mobile
+X Logotype
+X Fonts
+X Colors
