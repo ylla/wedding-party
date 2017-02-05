@@ -2,8 +2,48 @@
 
 5 Feb
 -----
-X Icke läskiga bilder på yllz
-First photo too dark and gloomy?
+-START-
+First photo too dark and gloomy? Change to Australia photo?
+RSVP button missing on start.html "Join us! ->"
+Change ampersand to underscore-o 
+Change the arrow on the button
+
+-Our story-
+Gabriel would love to see a photo from Honduras/Belize, but we don't seem to have any.
+Revision of text - G to make suggestion.
+Rename to OUR ADVENTURE
+Focus on travel photos
+Together with friends we launched...
+
+-Engagement-
+Replace two photos.
+Revision of text - G to make suggestion.
+Photo with house should not be first photo.
+
+-About G-
+Add interests and snow photo
+Ylla redigera bilden i photoshop - blur bg, skärpa, färgton. Gradient i botten?
+
+-About Y-
+Change text of Belize?
+
+-Venue-
+Add "evening of"
+Directions button: Add arrow. center the text in the button
+Make "Psst! Did you know? into H4
+
+-FAQ-
+There will be a separate space for children to sleep, nurse and play.
+Transportation
+Be kind to the environment. There is bus and metro within walking distance. Paid parking available for the designated drivers. Share a taxi.
+Remove "Arriving from out of town"
+Make "when you RSVP" into an anchor.
+
+-General-
+Check in different web browsers
+Photos should be 1200 width and 900 height, about 200k per image.
+Metadata for facebook sharing
+
 
 25 Jan
 ------
@@ -15,6 +55,7 @@ X Kortare radlängder för text på desktop
 Kolla metataggar för sharing
 Meny och snabbknapp för RSVP
 Närbilder blir väldigt... in your face
+	X Icke läskiga bilder på yllz
 
 22 Jan
 ------
