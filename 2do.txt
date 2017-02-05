@@ -4,8 +4,8 @@
 ------
 Hand cursor missing on pagination Y
 Hover effects on pagination Y
-White background further down (missing .slide div?)
-RSVP box too wide
+X White background further down (missing .slide div?)
+X RSVP box too wide
 X Kortare radlängder för text på desktop
 Kolla metataggar för sharing
 Meny och snabbknapp för RSVP
