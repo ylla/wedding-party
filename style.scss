@@ -190,6 +190,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+
+  &:hover {
+    background-color: rgba($wedding-brown, 0.1);
+  }
 }
 
 .venue {
