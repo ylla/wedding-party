@@ -40,9 +40,11 @@ p, h1, h2, h3, h4 {
   max-width: 30rem;
 }
 
-a, a:hover, a:link, a:visited, a:active {
+a, a:link, a:visited, a:active, a:hover {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+  cursor: hand;
 }
 
 $ampersand-height: 2.2em;
@@ -156,16 +158,25 @@ body {
 .arrow-left {
   text-align: left;
   flex: 1 1 0;
+  cursor: pointer;
+  cursor: hand;
 }
 .arrow-right {
   text-align: right;
   flex: 1 1 0;
+  cursor: pointer;
+  cursor: hand;
 }
 .dot.active::before {
   content: "\25CF";
 }
 .dot:before {
   content: "\25CB";
+  cursor: pointer;
+  cursor: hand;
+}
+.arrow-left:hover, .arrow-right:hover, .dot:hover {
+  color: mix($wedding-brown, white, 50%);
 }
 
 .button {

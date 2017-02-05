@@ -2,8 +2,8 @@
 
 25 Jan
 ------
-Hand cursor missing on pagination Y
-Hover effects on pagination Y
+X Hand cursor missing on pagination Y
+X Hover effects on pagination Y (arrows and peas change color on pagination)
 X White background further down (missing .slide div?)
 X RSVP box too wide
 X Kortare radlängder för text på desktop
