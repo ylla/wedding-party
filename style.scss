@@ -128,6 +128,9 @@ body {
         margin: 0 -0.3em (-($ampersand-height - 1)/2) -0.1em;
       }
     }
+    .button {
+      margin-top: 2rem;
+    }
   }
   &.photo {
     justify-content: flex-end;
@@ -183,7 +186,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 0.4rem solid $wedding-brown;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 
@@ -194,19 +197,32 @@ body {
   &:hover {
     background-color: rgba($wedding-brown, 0.1);
   }
+
+  &.dark {
+    border: 0.4rem solid white;
+    &:hover {
+      background-color: rgba(white, 0.1);
+    }
+  }
+
+  h1, h2, h3, h4 {
+    margin-bottom: 0em;
+    &:first-child {
+      margin-top: 0em;
+    } 
+  }
 }
 
 .venue {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   .address {
     display: flex;
     flex-flow: column nowrap;
   }
   a {
-    display: block;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+    margin: 2rem;
     padding: 1rem;
   }
 }
