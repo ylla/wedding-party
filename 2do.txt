@@ -6,7 +6,7 @@
 X First photo too dark and gloomy? Change to Australia photo?
 X RSVP button missing on start.html "Join us! ->"
 Change the arrow on the button
-Change ampersand to underscore-o 
+X Change ampersand to underscore-o No!
 
 
 -Our story-
@@ -22,7 +22,7 @@ Revision of text - G to make suggestion.
 Photo with house should not be first photo.
 
 -About G-
-Add interests and snow photo
+G to add interests and snow photo
 Ylla redigera bilden i photoshop - blur bg, skärpa, färgton. Gradient i botten?
 
 -About Y-
