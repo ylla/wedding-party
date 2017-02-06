@@ -43,6 +43,11 @@ function showDivs(section, n) {
   var dots = section.getElementsByClassName("dot");
   if (n > x.length) {n = 1}
   if (n < 1) {n = x.length}
+
+  if (n == getCurrentSlideInSection(section)) {
+    return;
+  }
+
   for (i = 0; i < x.length; i++) {
      x[i].className = x[i].className.replace(" active", "");
   }
