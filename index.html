@@ -27,6 +27,15 @@
     <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#3B2613">
 
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:title" content="{{ site.title | escape }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:image" content="/images/open-graph-preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:admins" content="100000901583954" />
+
+    <title>{{ site.title | escape }}</title>
+
     {% include photo-slider.js %}
   </head>
   
