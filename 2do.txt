@@ -52,7 +52,7 @@ Check in different web browsers
 X Photos should be 1200 width and 900 height, about 200k per image.
 Metadata for facebook sharing
 X Create email invitation
-Favicon by logotype
+X Favicon by logotype
 
 25 Jan
 ------
