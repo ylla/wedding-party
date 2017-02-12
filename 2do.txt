@@ -5,36 +5,38 @@
 -START-
 X First photo too dark and gloomy? Change to Australia photo?
 X RSVP button missing on start.html "Join us! ->"
-Change the arrow on the button
+X Change the arrow on the button
 X Change ampersand to underscore-o No!
 
 
--Our story-
+-Our Adventure-
 X Gabriel would love to see a photo from Honduras/Belize, but we don't seem to have any.
 Revision of text - G to make suggestion.
 X Rename to OUR ADVENTURE
-Focus on travel photos
+X Focus on travel photos
 X Together with friends we launched...
+X Rålis photo moved to Engagement
 
 -Engagement-
-Replace two photos.
+X Replace two photos.
 Revision of text - G to make suggestion.
-Photo with house should not be first photo.
+X Photo with house should not be first photo.
+X Added Rålis photo
 
 -About G-
 G to add interests and snow photo
-Ylla redigera bilden i photoshop - blur bg, skärpa, färgton. Gradient i botten?
+X Ylla redigera bilden i photoshop - blur bg, skärpa, färgton. Gradient i botten?
 
 -About Y-
 X Change text of Belize? No!
 
 -Venue-
 X Add "evening of"
-Directions button: Add arrow. center the text in the button
-Change the arrow on the button
+X Directions button: Add arrow. center the text in the button
+X Change the arrow on the button
 X Make "Psst! Did you know? into H4
 
--FAQ-
+X -FAQ-
 X There will be a separate space for children to sleep, nurse and play.
 X Transportation
 X Be kind to the environment. There is bus and metro within walking distance. 
@@ -43,14 +45,14 @@ X Remove "Arriving from out of town"
 X Make "when you RSVP" into an anchor.
 
 -RSVP-
-Change the arrow on the button
+X Change the arrow on the button
 
 -General-
 Check in different web browsers
-Photos should be 1200 width and 900 height, about 200k per image.
+X Photos should be 1200 width and 900 height, about 200k per image.
 Metadata for facebook sharing
-Send invitation for https://www.paperlesspost.com/cards/category/wedding-invitations-paper
-
+X Create email invitation
+Favicon by logotype
 
 25 Jan
 ------
