@@ -24,7 +24,7 @@ X Photo with house should not be first photo.
 X Added Rålis photo
 
 -About G-
-G to add interests and snow photo
+X G to add interests and snow photo
 X Ylla redigera bilden i photoshop - blur bg, skärpa, färgton. Gradient i botten?
 
 -About Y-
