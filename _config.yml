@@ -17,7 +17,7 @@ title: Ylla and Gabriel's wedding celebration
 description: > # this means to ignore newlines until "baseurl:"
   On the 19th of August 2017 Gabriel and Ylla will celebrate their marriage with a party!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.yllagabriel.wedding" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
