@@ -215,20 +215,6 @@ body {
   }
 }
 
-.venue {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  .address {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  a {
-    margin: 2rem;
-    padding: 1rem;
-  }
-}
-
 .venue-map {
   margin: 0 -2rem;
   flex: 1 0 600px;
