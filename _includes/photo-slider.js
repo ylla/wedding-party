@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (var i = 0; i < sections.length; i++) {
     var hammertime = new Hammer(sections[i]);
     hammertime.on('swipeleft', function(ev) {
-      plusDivs(ev.target, 1); 
+      plusDivs(ev.target, 1, 'swipe'); 
     });
     hammertime.on('swiperight', function(ev) {
-      plusDivs(ev.target, -1); 
+      plusDivs(ev.target, -1, 'swipe'); 
     });
   }
 });
@@ -26,14 +26,34 @@ function getSectionFromChild(element) {
   return section;
 }
 
-function plusDivs(element, n) {
+function getLabelFromSection(section) {
+  var label = section.getElementsByTagName('h1')[0].innerText;
+  label = label.toLowerCase();
+  label = label.replace(/ /g, '');
+  return label;
+}
+
+function plusDivs(element, n, interaction) {
   var section = getSectionFromChild(element);
+  interaction = interaction || 'click';
+  ga('send', 'event',  {
+    eventCategory: 'plusDivs',
+    eventAction: interaction,
+    eventLabel: getLabelFromSection(section) + ' ' + n,
+    transport: 'beacon'
+  });
   var currentSlide = getCurrentSlideInSection(section);
   showDivs(section, currentSlide + n);
 }
 
 function currentDiv(element, n) {
   var section = getSectionFromChild(element);
+  ga('send', 'event',  {
+    eventCategory: 'currentDiv',
+    eventAction: 'click',
+    eventLabel: getLabelFromSection(section) + ' ' + n,
+    transport: 'beacon'
+  });
   showDivs(section, n);
 }
 
