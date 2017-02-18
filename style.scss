@@ -114,20 +114,20 @@ body {
       margin-top: 1.2rem;
       margin-bottom: 0;
       &.larger {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.1em;
       }
       em {
-        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         font-style: normal;
       }
     }
     h1 {
-      text-align: center;
-      line-height: ($ampersand-height - 1)/2+1;
-      svg {
-        height: $ampersand-height;
-        margin: 0 -0.3em (-($ampersand-height - 1)/2) -0.1em;
+      font-size: 1.8rem;
+      .ampersand {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
       }
     }
     .button {
