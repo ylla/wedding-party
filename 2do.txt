@@ -40,10 +40,9 @@ X -FAQ-
 X There will be a separate space for children to sleep, nurse and play.
 X Transportation
 X Be kind to the environment. There is bus and metro within walking distance. 
-	Paid parking available for the designated drivers. Share a taxi.
 X Remove "Arriving from out of town"
 X Make "when you RSVP" into an anchor.
-Add gift giving info
+X Add gift giving info (spårbarhet)
 
 -RSVP-
 X Change the arrow on the button
@@ -63,7 +62,7 @@ X White background further down (missing .slide div?)
 X RSVP box too wide
 X Kortare radlängder för text på desktop
 Kolla metataggar för sharing
-Meny och snabbknapp för RSVP
+X Meny och snabbknapp för RSVP
 Närbilder blir väldigt... in your face
 	X Icke läskiga bilder på yllz
 
