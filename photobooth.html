@@ -1,0 +1,62 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#3B2613">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3B2613">
+
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:title" content="{{ site.title | escape }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/images/open-graph-preview.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:admins" content="100000901583954" />
+
+    <title>{{ site.title | escape }}</title>
+
+    <meta http-equiv="refresh" content="0; url={{ site.photobooth_url }}">
+    <link rel="canonical" href="{{ site.photobooth_url }}" />
+  </head>
+  
+  <body>
+    <div class="section" style="background-image: url(/images/seoul-flight.jpg); background-position: 70% 60%">
+      <div class="slide active start">
+        {% include assets/logo.svg %}
+        <h1>
+          Ylla <span class='ampersand'>&amp;</span> Gabriel
+        </h1>
+        <p>Wedding <em>celebration</em></p>
+        <p class="larger"><em>19 August</em> 2017</p>
+        <p><em>Stockholm</em>, Sweden</p>
+        <a class='outbound' href="{{ site.photobooth_url }}">
+          <div class="join-us-box button dark">
+            <h2>Photobooth pictures</h2>
+            <h4>If you're not redirected, find them here &#9654;</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
